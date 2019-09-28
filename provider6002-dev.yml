@@ -43,7 +43,7 @@ eureka:
     # 表示注册中心的地址
     service-url:
       # 地址为Eureka的地址，表示将我的服务注册到哪个注册中心
-      defaultZone: http://localhost:7168/eureka/
+      defaultZone: http://eureka1:7168/eureka/
 
   instance:
     # 将服务的IP地址信息注册到 Eureka上
