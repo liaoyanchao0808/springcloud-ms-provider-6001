@@ -22,6 +22,18 @@ spring:
       time-between-eviction-runs-millis: 30000
   application:
     name: ms-provider
+    
+  redis:
+    port: 6379
+    host: localhost
+    password: admin
+
+    lettuce:
+      pool:
+        min-idle: 2
+        max-active: 8
+  
+
 
 pagehelper:
   # 分页合理化参数，默认值为false。当该参数设置为 true 时，pageNum<=0 时会查询第一页， pageNum>pages（超过总数时），会查询最后一页
